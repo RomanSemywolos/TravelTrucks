@@ -1,0 +1,10 @@
+.header {
+    border-bottom: 1px solid var(--badges);
+    padding: 24px 64px;
+    background-color: var(--inputs);
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    width: 100%;
+}
+

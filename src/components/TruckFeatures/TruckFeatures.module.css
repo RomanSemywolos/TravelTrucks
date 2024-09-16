@@ -1,0 +1,56 @@
+/* Основний контейнер для відображення характеристик */
+.feature {
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+  }
+  
+  /* Обгортка для характеристики вантажівки */
+  .featureWrapper {
+    border-radius: 10px;
+    padding: 44px 52px;
+    width: 631px;
+    background-color: var(--inputs);
+  }
+  
+  /* Заголовок для секції деталей */
+  .equipmentTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--main);
+    margin-top: 100px; /* Виправлено для кращого відступу */
+    position: relative;
+  }
+  
+  /* Лінія під заголовком */
+  .equipmentTitle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+    width: 100%; /* Виправлено для забезпечення відповідного розміру */
+    height: 1px;
+    background-color: var(--gray-light);
+  }
+  
+  /* Контейнер для інформації про вантажівку */
+  .truckInfo {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Кожна категорія інформації про вантажівку */
+  .truckCategory {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--main);
+  }
+  

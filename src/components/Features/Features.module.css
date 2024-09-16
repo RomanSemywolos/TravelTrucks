@@ -1,0 +1,20 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Проміжок між функціями */
+}
+
+.feature {
+  border-radius: 100px; /* Закруглені кути */
+  padding: 12px 18px; /* Внутрішні відступи */
+  max-width: 143px; /* Максимальна ширина */
+  height: 48px; /* Висота */
+  background-color: var(--badges); /* Колір фону */
+  display: flex;
+  align-items: center; /* Вирівнювання по центру по вертикалі */
+  gap: 3px; /* Проміжок між іконкою та текстом */
+  font-weight: 500; /* Жирний шрифт */
+  font-size: 16px; /* Розмір шрифта */
+  line-height: 1.5; /* Висота рядка */
+  color: var(--main); /* Колір тексту */
+}

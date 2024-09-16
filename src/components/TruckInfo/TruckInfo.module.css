@@ -1,0 +1,78 @@
+.rating_wrapper {
+    display: flex;
+    align-items: center; /* Вирівнювання елементів по центру вертикально */
+    gap: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main);
+    margin-bottom: 16px; /* Відступ знизу */
+}
+
+.reviews {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 2px; /* Відстань від тексту до підкреслення */
+    margin-right: 16px; /* Відступ справа */
+}
+
+.name_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    color: var(--main);
+    max-width: 360px; /* Максимальна ширина заголовка */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє елементам переходити на новий рядок */
+    gap: 48px; /* Відступи між зображеннями */
+    margin: 28px 0; /* Відступи зверху і знизу */
+}
+
+.photo {
+    border-radius: 10px; /* Закруглення кутів */
+    width: 292px;
+    height: 312px;
+    object-fit: cover; /* Підгонка зображення без спотворення */
+}
+
+.item_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.details_list {
+    display: flex;
+    gap: 40px; /* Відстань між пунктами списку */
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 60px; /* Відступ зверху */
+    position: relative; /* Для абсолютного позиціонування псевдоелемента */
+}
+
+.details_item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -24px; /* Відступ від нижньої частини елемента */
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-light); /* Колір лінії під пунктом */
+}
+
+.details_link {
+    text-decoration: none;
+    color: var(--main);
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: var(--button-hover); /* Колір підкреслення */
+    text-decoration-thickness: 4px; /* Товщина підкреслення */
+    text-underline-offset: 25px; /* Відстань між текстом і підкресленням */
+}

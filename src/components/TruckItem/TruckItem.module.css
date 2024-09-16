@@ -1,0 +1,91 @@
+/* Основний контейнер для відображення вантажівки */
+.itemWrapper {
+  display: flex;
+  gap: 24px;
+}
+
+/* Обгортка для всіх елементів інформації про вантажівку */
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Фото вантажівки */
+.photo {
+  width: 292px;
+  height: 320px; /* Фіксована висота */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Обгортка для інформації про обране */
+.favouriteWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Обгортка для назви вантажівки та обраного статусу */
+.nameWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--main);
+}
+
+/* Назва вантажівки */
+.nameTitle {
+  max-width: 360px;
+}
+
+/* Обгортка для рейтингу та відгуків */
+.ratingWrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+/* Відгуки з підкресленням */
+.reviews {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+  margin-right: 16px;
+}
+
+/* Опис вантажівки */
+.itemDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* Кнопка "Show more" */
+.itemButton {
+  border-radius: 200px;
+  width: 166px;
+  height: 56px;
+  background-color: var(--button);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+/* Стиль для кнопки при наведенні */
+.itemButton:hover {
+  background-color: var(--button-hover);
+}

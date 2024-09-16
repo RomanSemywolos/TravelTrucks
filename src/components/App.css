@@ -1,0 +1,8 @@
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрує вміст по горизонталі */
+  margin: 0 auto; /* Центрує контейнер по горизонталі */
+  width: fit-content; /* Контейнер підлаштовується під ширину вмісту */
+  min-width: 1440px;
+}
